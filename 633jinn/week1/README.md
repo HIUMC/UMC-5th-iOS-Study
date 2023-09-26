@@ -67,4 +67,5 @@ class Operator{ // 클래스
 protocol Flyable{ // 프로토콜
     func fly()
 }
+
 ```
