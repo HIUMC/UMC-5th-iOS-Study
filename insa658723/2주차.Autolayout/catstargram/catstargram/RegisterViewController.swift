@@ -9,6 +9,15 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     // MARK: - Properties
+    var email: String = ""
+    var name: String = ""
+    var nickname: String = ""
+    var password: String = ""
+    
+    // 구조체를 파라미터로 전달
+    // 클로저.
+    var userInfo: ((UserInfo) -> Void)?
+    
     // 유효성검사를 위한 프로퍼티 -> 유효성검사를 하고 난 Bool값을 여기에 저장한다.
     var isValidEmail = false {
         didSet { // 프로퍼티 옵저버
@@ -64,6 +73,9 @@ class RegisterViewController: UIViewController {
         setupTextField()
         setupAttribute()
         
+        // bug fix
+        // 제스처로도 뒤로가기가 가능.
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
     }
     
     
@@ -75,15 +87,19 @@ class RegisterViewController: UIViewController {
         switch sender {
         case emailTextField:
             self.isValidEmail = text.isValidEmail()
+            self.email = text
             
         case nameTextField:
             self.isValidName = text.count > 2
+            self.name = text
             
         case nicknameTextField:
             self.isValidNickname = text.count > 2
+            self.nickname = text
             
         case passwordTextField:
             self.isValidPassword = text.isValidPassword()
+            self.password = text
             
             
         default:
@@ -91,6 +107,27 @@ class RegisterViewController: UIViewController {
             
         }
     }
+    
+    @IBAction func backButtonDidTap(_ sender: UIBarButtonItem) {
+        // 뒤로가기
+        // 이전화면으로 돌아가는것을 popviewcontroller라고 한다.
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func registerButtonDidTap(_ sender: UIButton) {
+        // 뒤로가기
+        self.navigationController?.popViewController(animated: true)
+        
+        let userInfo = UserInfo(
+            email: self.email,
+            name: self.name,
+            nickname: self.nickname,
+            password: self.password)
+        
+        self.userInfo?(userInfo)
+        
+    }
+    
     
     // MARK: - Helpers
     private func setupTextField() {
