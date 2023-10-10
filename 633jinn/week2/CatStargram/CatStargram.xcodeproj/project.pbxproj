@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		894640E22AC6A0C700259C6C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894640E12AC6A0C700259C6C /* UserInfo.swift */; };
+		894CF5422AC5AD33008503BD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894CF5412AC5AD33008503BD /* UIView+Extension.swift */; };
+		894CF5442AC5B2A5008503BD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894CF5432AC5B2A5008503BD /* UIViewController+Extension.swift */; };
+		8987FB902ACFB69D00C44BFA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987FB8F2ACFB69D00C44BFA /* HomeViewController.swift */; };
 		89BB29572ABEB0D100E79D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB29562ABEB0D100E79D93 /* AppDelegate.swift */; };
 		89BB29592ABEB0D100E79D93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB29582ABEB0D100E79D93 /* SceneDelegate.swift */; };
 		89BB295B2ABEB0D100E79D93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB295A2ABEB0D100E79D93 /* ViewController.swift */; };
 		89BB295E2ABEB0D100E79D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BB295C2ABEB0D100E79D93 /* Main.storyboard */; };
 		89BB29602ABEB0D200E79D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BB295F2ABEB0D200E79D93 /* Assets.xcassets */; };
 		89BB29632ABEB0D200E79D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BB29612ABEB0D200E79D93 /* LaunchScreen.storyboard */; };
+		89DAB82A2AC401F400F59C28 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DAB8292AC401F400F59C28 /* Color+Extension.swift */; };
+		89DAB82C2AC404B800F59C28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DAB82B2AC404B800F59C28 /* LoginViewController.swift */; };
+		89DAB82E2AC40DF100F59C28 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DAB82D2AC40DF100F59C28 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		894640E12AC6A0C700259C6C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		894CF5412AC5AD33008503BD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		894CF5432AC5B2A5008503BD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		8987FB8F2ACFB69D00C44BFA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		89BB29532ABEB0D100E79D93 /* CatStargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatStargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BB29562ABEB0D100E79D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89BB29582ABEB0D100E79D93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,9 @@
 		89BB295F2ABEB0D200E79D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89BB29622ABEB0D200E79D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89BB29642ABEB0D200E79D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89DAB8292AC401F400F59C28 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		89DAB82B2AC404B800F59C28 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		89DAB82D2AC40DF100F59C28 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8987FB8E2ACFB68100C44BFA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8987FB8F2ACFB69D00C44BFA /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		89BB294A2ABEB0D100E79D93 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +78,17 @@
 		89BB29552ABEB0D100E79D93 /* CatStargram */ = {
 			isa = PBXGroup;
 			children = (
+				8987FB8E2ACFB68100C44BFA /* Home */,
+				894CF5412AC5AD33008503BD /* UIView+Extension.swift */,
+				894640E12AC6A0C700259C6C /* UserInfo.swift */,
 				89BB29562ABEB0D100E79D93 /* AppDelegate.swift */,
+				894CF5432AC5B2A5008503BD /* UIViewController+Extension.swift */,
 				89BB29582ABEB0D100E79D93 /* SceneDelegate.swift */,
+				89DAB8292AC401F400F59C28 /* Color+Extension.swift */,
+				89DAB82D2AC40DF100F59C28 /* RegisterViewController.swift */,
 				89BB295A2ABEB0D100E79D93 /* ViewController.swift */,
 				89BB295C2ABEB0D100E79D93 /* Main.storyboard */,
+				89DAB82B2AC404B800F59C28 /* LoginViewController.swift */,
 				89BB295F2ABEB0D200E79D93 /* Assets.xcassets */,
 				89BB29612ABEB0D200E79D93 /* LaunchScreen.storyboard */,
 				89BB29642ABEB0D200E79D93 /* Info.plist */,
@@ -138,9 +167,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894CF5442AC5B2A5008503BD /* UIViewController+Extension.swift in Sources */,
 				89BB295B2ABEB0D100E79D93 /* ViewController.swift in Sources */,
+				894CF5422AC5AD33008503BD /* UIView+Extension.swift in Sources */,
 				89BB29572ABEB0D100E79D93 /* AppDelegate.swift in Sources */,
 				89BB29592ABEB0D100E79D93 /* SceneDelegate.swift in Sources */,
+				8987FB902ACFB69D00C44BFA /* HomeViewController.swift in Sources */,
+				89DAB82E2AC40DF100F59C28 /* RegisterViewController.swift in Sources */,
+				89DAB82C2AC404B800F59C28 /* LoginViewController.swift in Sources */,
+				894640E22AC6A0C700259C6C /* UserInfo.swift in Sources */,
+				89DAB82A2AC401F400F59C28 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

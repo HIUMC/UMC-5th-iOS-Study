@@ -21,3 +21,4 @@
 - 홈 화면의 아이콘 이외에도 notification에서 사용되는 아이콘, 세팅에 사용되는 아이콘 등을
 각각 관리할 수 있으며 1x, 2x와 같이 크기별로 추가할 수도 있다.
 - Assets.xcassets 의 `Contents.json`을 통해 AppIcon의 위치를 지정해줄 수 있다.
+
