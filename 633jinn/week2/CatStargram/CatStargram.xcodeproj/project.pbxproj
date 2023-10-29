@@ -10,6 +10,12 @@
 		894640E22AC6A0C700259C6C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894640E12AC6A0C700259C6C /* UserInfo.swift */; };
 		894CF5422AC5AD33008503BD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894CF5412AC5AD33008503BD /* UIView+Extension.swift */; };
 		894CF5442AC5B2A5008503BD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894CF5432AC5B2A5008503BD /* UIViewController+Extension.swift */; };
+		895565C82AEE95E6003E48F7 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895565C62AEE95E6003E48F7 /* StoryTableViewCell.swift */; };
+		895565C92AEE95E6003E48F7 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895565C72AEE95E6003E48F7 /* StoryTableViewCell.xib */; };
+		895565CC2AEE996B003E48F7 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895565CA2AEE996B003E48F7 /* StoryCollectionViewCell.swift */; };
+		895565CD2AEE996B003E48F7 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895565CB2AEE996B003E48F7 /* StoryCollectionViewCell.xib */; };
+		8972AA122AED5AD900593510 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972AA102AED5AD900593510 /* FeedTableViewCell.swift */; };
+		8972AA132AED5AD900593510 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8972AA112AED5AD900593510 /* FeedTableViewCell.xib */; };
 		8987FB902ACFB69D00C44BFA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987FB8F2ACFB69D00C44BFA /* HomeViewController.swift */; };
 		89BB29572ABEB0D100E79D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB29562ABEB0D100E79D93 /* AppDelegate.swift */; };
 		89BB29592ABEB0D100E79D93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB29582ABEB0D100E79D93 /* SceneDelegate.swift */; };
@@ -26,6 +32,12 @@
 		894640E12AC6A0C700259C6C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		894CF5412AC5AD33008503BD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		894CF5432AC5B2A5008503BD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		895565C62AEE95E6003E48F7 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		895565C72AEE95E6003E48F7 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
+		895565CA2AEE996B003E48F7 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		895565CB2AEE996B003E48F7 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		8972AA102AED5AD900593510 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		8972AA112AED5AD900593510 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		8987FB8F2ACFB69D00C44BFA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		89BB29532ABEB0D100E79D93 /* CatStargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatStargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BB29562ABEB0D100E79D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,9 +63,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8972AA0F2AED59F700593510 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8972AA102AED5AD900593510 /* FeedTableViewCell.swift */,
+				8972AA112AED5AD900593510 /* FeedTableViewCell.xib */,
+				895565C62AEE95E6003E48F7 /* StoryTableViewCell.swift */,
+				895565C72AEE95E6003E48F7 /* StoryTableViewCell.xib */,
+				895565CA2AEE996B003E48F7 /* StoryCollectionViewCell.swift */,
+				895565CB2AEE996B003E48F7 /* StoryCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		8987FB8E2ACFB68100C44BFA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8972AA0F2AED59F700593510 /* Cell */,
 				8987FB8F2ACFB69D00C44BFA /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -155,7 +181,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				89BB29632ABEB0D200E79D93 /* LaunchScreen.storyboard in Resources */,
+				8972AA132AED5AD900593510 /* FeedTableViewCell.xib in Resources */,
 				89BB29602ABEB0D200E79D93 /* Assets.xcassets in Resources */,
+				895565C92AEE95E6003E48F7 /* StoryTableViewCell.xib in Resources */,
+				895565CD2AEE996B003E48F7 /* StoryCollectionViewCell.xib in Resources */,
 				89BB295E2ABEB0D100E79D93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,8 +204,11 @@
 				8987FB902ACFB69D00C44BFA /* HomeViewController.swift in Sources */,
 				89DAB82E2AC40DF100F59C28 /* RegisterViewController.swift in Sources */,
 				89DAB82C2AC404B800F59C28 /* LoginViewController.swift in Sources */,
+				895565CC2AEE996B003E48F7 /* StoryCollectionViewCell.swift in Sources */,
 				894640E22AC6A0C700259C6C /* UserInfo.swift in Sources */,
 				89DAB82A2AC401F400F59C28 /* Color+Extension.swift in Sources */,
+				8972AA122AED5AD900593510 /* FeedTableViewCell.swift in Sources */,
+				895565C82AEE95E6003E48F7 /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
