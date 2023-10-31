@@ -87,8 +87,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="mxT-n4-Vbr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BYs-mU-8L2"/>
-                            <constraint firstItem="mxT-n4-Vbr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yKy-vO-4SB"/>
+                            <constraint firstItem="mxT-n4-Vbr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AvK-Da-ebG"/>
+                            <constraint firstItem="mxT-n4-Vbr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="pVP-tI-MP5"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
