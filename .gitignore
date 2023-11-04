@@ -1,1 +1,8 @@
+# .gitignore 파일 내용
+
+# macOS에서 생성되는 .DS_Store 파일 제외
 .DS_Store
+
+# Xcode 프로젝트와 관련된 파일 및 폴더 제외
+**/xcuserdata/
+**/UserInterfaceState.xcuserstate
