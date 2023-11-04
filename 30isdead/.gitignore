@@ -1,8 +1,0 @@
-# .DS_Store 파일 제외
-.DS_Store
-
-# Xcode 프로젝트와 관련된 파일 및 디렉토리 제외
-30isdead/Week2/Baemin/Baemin.xcodeproj/project.xcworkspace/xcuserdata/seyoung.xcuserdatad/UserInterfaceState.xcuserstate
-30isdead/Week2/Section.4/Section.4.xcodeproj/project.xcworkspace/xcuserdata/seyoung.xcuserdatad/UserInterfaceState.xcuserstate
-30isdead/Week3/Section5-20/Section5-20.xcodeproj/project.xcworkspace/xcuserdata/seyoung.xcuserdatad/UserInterfaceState.xcuserstate
-30isdead/Week3/Section5/Section5.xcodeproj/project.xcworkspace/xcuserdata/seyoung.xcuserdatad/UserInterfaceState.xcuserstate
