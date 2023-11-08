@@ -1,5 +1,22 @@
+# Ignore macOS system files
 .DS_Store
-30isdead/Week2/Baemin/Baemin.xcodeproj/project.xcworkspace/xcuserdata/seyoung.xcuserdatad/UserInterfaceState.xcuserstate
-30isdead/Week2/Section.4/Section.4.xcodeproj/project.xcworkspace/xcuserdata/seyoung.xcuserdatad/UserInterfaceState.xcuserstate
-30isdead/Week3/Section5-20/Section5-20.xcodeproj/project.xcworkspace/xcuserdata/seyoung.xcuserdatad/UserInterfaceState.xcuserstate
-30isdead/Week3/Section5/Section5.xcodeproj/project.xcworkspace/xcuserdata/seyoung.xcuserdatad/UserInterfaceState.xcuserstate
+30/.DS_Store
+30/Week1/.DS_Store
+30/Week2/.DS_Store
+30/Week3/.DS_Store
+30/Week5/.DS_Store
+30/Week5/Catstagram/.DS_Store
+30/Week5/Catstagram/Catstagram/Home/.DS_Store
+30/Week6/.DS_Store
+30/Week6/Catstagram/.DS_Store
+30/Week6/Catstagram/Catstagram/Home/.DS_Store
+30/Week6/Prac/.DS_Store
+30/Week6/Prac/gogo/.DS_Store
+30/Week6/Quizzler-iOS13-master/.DS_Store
+30/Week6/UIpractice/.DS_Store
+633jinn/
+generalcho/
+insa658723/
+kwaktato/
+ohyeonseo/
+W99Hyun/
