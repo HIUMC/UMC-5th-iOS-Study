@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.separatorStyle = .none
+        tableView.separatorStyle = .none  // Cell 분리
         let feedNib = UINib(nibName: "FeedTableViewCell", bundle: nil)
         tableView.register(feedNib, forCellReuseIdentifier: "FeedTableViewCell")
         let storyNib = UINib(nibName: "", bundle: nil)
@@ -44,7 +44,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { // cell 높이 설정
         if indexPath.row == 0 {
             return 80
         } else {
@@ -52,7 +52,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
+    // cell이 보여질때 
+    {
         guard let tableViewCell = cell as? StoryTableViewCell else {
             return
         }
