@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A8E586E3-7BEB-47FF-BF0C-A9D77AB5F258"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "C3A9297B-804D-41D0-9E87-61E4794973FF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x1041a474c">
+            <Locations>
+               <Location
+                  uuid = "C3A9297B-804D-41D0-9E87-61E4794973FF - 84b9ca6324ad84fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static I_am_Rich.AppDelegate.$main() -&gt; ()"
+                  moduleName = "I am Rich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leejiwoo/Desktop/iOS/UMC-5th-iOS-Study/insa658723/I%20am%20Rich/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
