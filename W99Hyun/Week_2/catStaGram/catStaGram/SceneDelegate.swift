@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  catStaGram
+//  CatStaGram
 //
-//  Created by WooHyun on 2023/09/25.
+//  Created by W99Hyun on 9/23/23.
 //
 
 import UIKit
@@ -49,4 +49,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
+
 
