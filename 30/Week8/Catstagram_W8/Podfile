@@ -1,0 +1,19 @@
+#Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Catstagram_W7' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Catstagram_W7
+	pod 'Alamofire'
+  target 'Catstagram_W7Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Catstagram_W7UITests' do
+    # Pods for testing
+  end
+
+end
