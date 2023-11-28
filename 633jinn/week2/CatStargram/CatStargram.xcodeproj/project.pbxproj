@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		891E9C9B2B0BB560004B6C07 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E9C9A2B0BB560004B6C07 /* ProfileViewController.swift */; };
+		891E9CA32B0BB808004B6C07 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E9CA12B0BB808004B6C07 /* ProfileCollectionViewCell.swift */; };
+		891E9CA42B0BB808004B6C07 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 891E9CA22B0BB808004B6C07 /* ProfileCollectionViewCell.xib */; };
 		894640E22AC6A0C700259C6C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894640E12AC6A0C700259C6C /* UserInfo.swift */; };
 		894CF5422AC5AD33008503BD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894CF5412AC5AD33008503BD /* UIView+Extension.swift */; };
 		894CF5442AC5B2A5008503BD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894CF5432AC5B2A5008503BD /* UIViewController+Extension.swift */; };
@@ -14,6 +17,11 @@
 		895565C92AEE95E6003E48F7 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895565C72AEE95E6003E48F7 /* StoryTableViewCell.xib */; };
 		895565CC2AEE996B003E48F7 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895565CA2AEE996B003E48F7 /* StoryCollectionViewCell.swift */; };
 		895565CD2AEE996B003E48F7 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895565CB2AEE996B003E48F7 /* StoryCollectionViewCell.xib */; };
+		89577C692B159A21003B0F82 /* FeedAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89577C682B159A21003B0F82 /* FeedAPIInput.swift */; };
+		89577C6B2B159A65003B0F82 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89577C6A2B159A65003B0F82 /* FeedModel.swift */; };
+		89577C6D2B159A99003B0F82 /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89577C6C2B159A99003B0F82 /* FeedDataManager.swift */; };
+		8959F5A62B14E7F500732E51 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959F5A42B14E7F500732E51 /* PostCollectionViewCell.swift */; };
+		8959F5A72B14E7F500732E51 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8959F5A52B14E7F500732E51 /* PostCollectionViewCell.xib */; };
 		8972AA122AED5AD900593510 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972AA102AED5AD900593510 /* FeedTableViewCell.swift */; };
 		8972AA132AED5AD900593510 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8972AA112AED5AD900593510 /* FeedTableViewCell.xib */; };
 		8987FB902ACFB69D00C44BFA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987FB8F2ACFB69D00C44BFA /* HomeViewController.swift */; };
@@ -26,9 +34,15 @@
 		89DAB82A2AC401F400F59C28 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DAB8292AC401F400F59C28 /* Color+Extension.swift */; };
 		89DAB82C2AC404B800F59C28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DAB82B2AC404B800F59C28 /* LoginViewController.swift */; };
 		89DAB82E2AC40DF100F59C28 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DAB82D2AC40DF100F59C28 /* RegisterViewController.swift */; };
+		92F5B6C5636DFB395B714149 /* Pods_CatStargram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3561288327430EB79068A76A /* Pods_CatStargram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3561288327430EB79068A76A /* Pods_CatStargram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatStargram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C1221C0979E8D5B692D267 /* Pods-CatStargram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatStargram.debug.xcconfig"; path = "Target Support Files/Pods-CatStargram/Pods-CatStargram.debug.xcconfig"; sourceTree = "<group>"; };
+		891E9C9A2B0BB560004B6C07 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		891E9CA12B0BB808004B6C07 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		891E9CA22B0BB808004B6C07 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		894640E12AC6A0C700259C6C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		894CF5412AC5AD33008503BD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		894CF5432AC5B2A5008503BD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -36,6 +50,11 @@
 		895565C72AEE95E6003E48F7 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		895565CA2AEE996B003E48F7 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		895565CB2AEE996B003E48F7 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		89577C682B159A21003B0F82 /* FeedAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInput.swift; sourceTree = "<group>"; };
+		89577C6A2B159A65003B0F82 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		89577C6C2B159A99003B0F82 /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
+		8959F5A42B14E7F500732E51 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		8959F5A52B14E7F500732E51 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		8972AA102AED5AD900593510 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		8972AA112AED5AD900593510 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		8987FB8F2ACFB69D00C44BFA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +69,7 @@
 		89DAB8292AC401F400F59C28 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		89DAB82B2AC404B800F59C28 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		89DAB82D2AC40DF100F59C28 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		ABCF61047077CB0779A9934F /* Pods-CatStargram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatStargram.release.xcconfig"; path = "Target Support Files/Pods-CatStargram/Pods-CatStargram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +77,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F5B6C5636DFB395B714149 /* Pods_CatStargram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EEA5FE7F3AD64F3A79E2B52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56C1221C0979E8D5B692D267 /* Pods-CatStargram.debug.xcconfig */,
+				ABCF61047077CB0779A9934F /* Pods-CatStargram.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7937AAD830A0B26DFBC73A47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3561288327430EB79068A76A /* Pods_CatStargram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		891E9C992B0BB53C004B6C07 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				891E9C9C2B0BB786004B6C07 /* Cell */,
+				891E9C9A2B0BB560004B6C07 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		891E9C9C2B0BB786004B6C07 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8959F5A32B14E7E200732E51 /* PostCell */,
+				8959F5A22B14E7D500732E51 /* ProfileCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		89577C672B159A0A003B0F82 /* FeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				89577C682B159A21003B0F82 /* FeedAPIInput.swift */,
+				89577C6A2B159A65003B0F82 /* FeedModel.swift */,
+				89577C6C2B159A99003B0F82 /* FeedDataManager.swift */,
+			);
+			path = FeedDataManager;
+			sourceTree = "<group>";
+		};
+		8959F5A22B14E7D500732E51 /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				891E9CA12B0BB808004B6C07 /* ProfileCollectionViewCell.swift */,
+				891E9CA22B0BB808004B6C07 /* ProfileCollectionViewCell.xib */,
+			);
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
+		8959F5A32B14E7E200732E51 /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				8959F5A42B14E7F500732E51 /* PostCollectionViewCell.swift */,
+				8959F5A52B14E7F500732E51 /* PostCollectionViewCell.xib */,
+			);
+			path = PostCell;
+			sourceTree = "<group>";
+		};
 		8972AA0F2AED59F700593510 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +163,7 @@
 		8987FB8E2ACFB68100C44BFA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				89577C672B159A0A003B0F82 /* FeedDataManager */,
 				8972AA0F2AED59F700593510 /* Cell */,
 				8987FB8F2ACFB69D00C44BFA /* HomeViewController.swift */,
 			);
@@ -90,6 +175,8 @@
 			children = (
 				89BB29552ABEB0D100E79D93 /* CatStargram */,
 				89BB29542ABEB0D100E79D93 /* Products */,
+				2EEA5FE7F3AD64F3A79E2B52 /* Pods */,
+				7937AAD830A0B26DFBC73A47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				8987FB8E2ACFB68100C44BFA /* Home */,
+				891E9C992B0BB53C004B6C07 /* Profile */,
 				894CF5412AC5AD33008503BD /* UIView+Extension.swift */,
 				894640E12AC6A0C700259C6C /* UserInfo.swift */,
 				89BB29562ABEB0D100E79D93 /* AppDelegate.swift */,
@@ -129,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89BB29672ABEB0D200E79D93 /* Build configuration list for PBXNativeTarget "CatStargram" */;
 			buildPhases = (
+				4538D5DCFCA86A04D65863C5 /* [CP] Check Pods Manifest.lock */,
 				89BB294F2ABEB0D100E79D93 /* Sources */,
 				89BB29502ABEB0D100E79D93 /* Frameworks */,
 				89BB29512ABEB0D100E79D93 /* Resources */,
+				31D816F06C4E4FFBEC7123A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,9 +270,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8959F5A72B14E7F500732E51 /* PostCollectionViewCell.xib in Resources */,
 				89BB29632ABEB0D200E79D93 /* LaunchScreen.storyboard in Resources */,
 				8972AA132AED5AD900593510 /* FeedTableViewCell.xib in Resources */,
 				89BB29602ABEB0D200E79D93 /* Assets.xcassets in Resources */,
+				891E9CA42B0BB808004B6C07 /* ProfileCollectionViewCell.xib in Resources */,
 				895565C92AEE95E6003E48F7 /* StoryTableViewCell.xib in Resources */,
 				895565CD2AEE996B003E48F7 /* StoryCollectionViewCell.xib in Resources */,
 				89BB295E2ABEB0D100E79D93 /* Main.storyboard in Resources */,
@@ -191,15 +283,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31D816F06C4E4FFBEC7123A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatStargram/Pods-CatStargram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatStargram/Pods-CatStargram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatStargram/Pods-CatStargram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4538D5DCFCA86A04D65863C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatStargram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89BB294F2ABEB0D100E79D93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				894CF5442AC5B2A5008503BD /* UIViewController+Extension.swift in Sources */,
+				89577C6B2B159A65003B0F82 /* FeedModel.swift in Sources */,
+				89577C692B159A21003B0F82 /* FeedAPIInput.swift in Sources */,
+				89577C6D2B159A99003B0F82 /* FeedDataManager.swift in Sources */,
 				89BB295B2ABEB0D100E79D93 /* ViewController.swift in Sources */,
 				894CF5422AC5AD33008503BD /* UIView+Extension.swift in Sources */,
 				89BB29572ABEB0D100E79D93 /* AppDelegate.swift in Sources */,
+				8959F5A62B14E7F500732E51 /* PostCollectionViewCell.swift in Sources */,
+				891E9CA32B0BB808004B6C07 /* ProfileCollectionViewCell.swift in Sources */,
+				891E9C9B2B0BB560004B6C07 /* ProfileViewController.swift in Sources */,
 				89BB29592ABEB0D100E79D93 /* SceneDelegate.swift in Sources */,
 				8987FB902ACFB69D00C44BFA /* HomeViewController.swift in Sources */,
 				89DAB82E2AC40DF100F59C28 /* RegisterViewController.swift in Sources */,
@@ -271,7 +411,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -334,7 +474,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -355,12 +495,14 @@
 		};
 		89BB29682ABEB0D200E79D93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C1221C0979E8D5B692D267 /* Pods-CatStargram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AWQXXMNQS8;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatStargram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -383,12 +525,14 @@
 		};
 		89BB29692ABEB0D200E79D93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABCF61047077CB0779A9934F /* Pods-CatStargram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AWQXXMNQS8;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatStargram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

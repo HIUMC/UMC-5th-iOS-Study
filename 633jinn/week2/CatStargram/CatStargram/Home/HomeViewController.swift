@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var arrayCat : [FeedModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +25,18 @@ class HomeViewController: UIViewController {
         
         let storyNib = UINib(nibName: "StoryTableViewCell", bundle: nil)
         tableView.register(storyNib, forCellReuseIdentifier: "StoryTableViewCell")
+        
+        //limint:30으로 한번에 30장의 사진을 가져오면 가져올 때 렉이 걸리는 현상이 생길 수 있다.
+        //paging처리를 통해 한번에 가져오는 수를 제한한다.(10개->20개->30개로 늘어나게됨)
+        let input = FeedAPIInput(limit: 30, page: 10)
+        FeedDataManager().feedDataManager(input,self)
     }
 
 }
 
 extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { // 한 섹션에 몇 개의 cell을 넣을 것인가.
-        return 10
+        return arrayCat.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { // 어떤 cell을 보여줄 것인가.
@@ -52,8 +59,10 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
                 //오류가 발생할 경우 기본 TableViewCell을 내보낸다.
                 return UITableViewCell()
             }
-            //하나의 셀을 클릭했을 때 회색으로 cell의 영역이 보이지 않게 한다
-            cell.selectionStyle = .none
+            if let urlString = arrayCat[indexPath.row - 1].url{
+                let url = URL(string: urlString)
+                cell.imageViewFeed.kf.setImage(with: url)
+            }
             return cell
         }
     }
@@ -91,5 +100,11 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
      */
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 50, height: 60)
+    }
+}
+extension HomeViewController{
+    func successAPI(_ result : [FeedModel]){
+        arrayCat = result
+        tableView.reloadData()
     }
 }
