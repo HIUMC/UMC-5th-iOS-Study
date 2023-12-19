@@ -55,9 +55,11 @@ class LoginViewController: UIViewController {
         
         if userInfo.email == self.email
             && userInfo.password == self.password{
+            
+            //화면 전환
             let vc = storyboard? .instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true, completion: nil)
+            
+            self.view.window?.windowScene?.keyWindow?.rootViewController = vc
             
         } else{
             self.loginButton.backgroundColor = .disabledButtonColor

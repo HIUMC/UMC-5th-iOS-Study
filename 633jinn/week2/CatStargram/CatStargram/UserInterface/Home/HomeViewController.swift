@@ -13,6 +13,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var arrayCat : [FeedModel] = []
     
+    // 앨범(사진 보관함)으로 이동
+    let imagePickerVewController = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,9 +32,16 @@ class HomeViewController: UIViewController {
         //limint:30으로 한번에 30장의 사진을 가져오면 가져올 때 렉이 걸리는 현상이 생길 수 있다.
         //paging처리를 통해 한번에 가져오는 수를 제한한다.(10개->20개->30개로 늘어나게됨)
         let input = FeedAPIInput(limit: 30, page: 10)
-        FeedDataManager().feedDataManager(input,self)
+        FeedDataManager().feedDataManager(self, input)
+        
+        imagePickerVewController.delegate = self
     }
-
+    
+    @IBAction func buttonGoAlbum(_ sender: Any) {
+        self.imagePickerVewController.sourceType = .photoLibrary
+        self.present(imagePickerVewController, animated: true, completion: nil)
+    }
+    
 }
 
 extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
@@ -107,4 +117,23 @@ extension HomeViewController{
         arrayCat = result
         tableView.reloadData()
     }
+}
+
+// 이미지 선택 기능
+extension HomeViewController : UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+    
+    //내가 어떤 이미지(info)를 pick했을 때 어떤 일이 일어나게 할 것인가
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            // 실무에서는 데이터의 멀티파라미터 형태로 보내거나
+            // firebase에 한번 연동해서 이미지를 string 형태로 가져와 연결해준다.
+            let imageString = "gs://catstargram-d7fbf.appspot.com/Cat1"
+            let input = FeedUploadInput(content: "저희 상이입니다. 귀엽지 않나요?", postImgUrl: [imageString])
+            FeedUploadDataManager().posts(self, input)
+            
+            // 앨범 닫기
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
 }
