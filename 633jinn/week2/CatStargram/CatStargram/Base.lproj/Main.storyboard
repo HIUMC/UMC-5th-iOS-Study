@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Qx-XA-fLl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZIp-fL-aAy">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -27,7 +26,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LJW-OM-ecI">
                                 <rect key="frame" x="10" y="405" width="370" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="emailTextFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="m2M-jc-Ipa"/>
                                     <action selector="passwordTextFeildEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="3mW-cC-VbI"/>
@@ -375,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTS-iH-mP7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2509.2307692307691" y="1402.6066350710901"/>
+            <point key="canvasLocation" x="3205" y="1403"/>
         </scene>
         <!--Home-->
         <scene sceneID="Mdn-pR-hlP">
@@ -414,6 +413,9 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="ic_home_upload"/>
+                                        <connections>
+                                            <action selector="buttonGoAlbum:" destination="TdO-KE-Fv1" eventType="touchUpInside" id="9ep-XY-xQu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -454,14 +456,14 @@
                             <constraint firstItem="wyS-n4-V3a" firstAttribute="centerY" secondItem="jRt-jn-NDD" secondAttribute="centerY" constant="-350" id="wdT-VZ-NAZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="usz-aa-rFi"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="usz-aa-rFi"/>
                     <connections>
                         <outlet property="tableView" destination="YOY-mi-SKT" id="F74-gG-Hrc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkS-WS-U51" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="550.76923076923072" y="1402.6066350710901"/>
+            <point key="canvasLocation" x="125" y="1403"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DhO-l4-VOU">
@@ -471,9 +473,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="TdO-KE-Fv1" kind="relationship" relationship="viewControllers" id="H1s-mG-Ca8"/>
+                        <segue destination="F1o-WT-dOU" kind="relationship" relationship="viewControllers" id="OYW-xc-AiT"/>
                         <segue destination="AxK-hb-UEW" kind="relationship" relationship="viewControllers" id="v0e-mG-gjp"/>
                     </connections>
                 </tabBarController>
@@ -503,7 +507,7 @@
         <scene sceneID="487-Ro-dHn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AxK-hb-UEW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="C6Q-OP-Lho"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="C6Q-OP-Lho"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e3H-iG-vXu">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -516,18 +520,58 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIX-yB-d2O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="1402.6066350710901"/>
+            <point key="canvasLocation" x="2072" y="1403"/>
+        </scene>
+        <!--릴스-->
+        <scene sceneID="6a6-qa-56t">
+            <objects>
+                <viewController storyboardIdentifier="ReelsViewController" id="F1o-WT-dOU" customClass="ReelsViewController" customModule="CatStargram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l30-dy-ZWl">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Dtn-H1-MxF">
+                                <rect key="frame" x="0.0" y="47" width="390" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eBP-xg-URj">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RSb-jS-UfP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dtn-H1-MxF" firstAttribute="leading" secondItem="RSb-jS-UfP" secondAttribute="leading" id="1KF-ud-CoT"/>
+                            <constraint firstItem="Dtn-H1-MxF" firstAttribute="top" secondItem="RSb-jS-UfP" secondAttribute="top" id="Mw9-fC-iRB"/>
+                            <constraint firstItem="RSb-jS-UfP" firstAttribute="trailing" secondItem="Dtn-H1-MxF" secondAttribute="trailing" id="SHq-Q4-xxY"/>
+                            <constraint firstItem="RSb-jS-UfP" firstAttribute="bottom" secondItem="Dtn-H1-MxF" secondAttribute="bottom" id="ny5-PV-ZCY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="릴스" id="Bj6-rc-BN7"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Dtn-H1-MxF" id="hdw-aW-3gu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvS-GH-4ZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="1403"/>
         </scene>
     </scenes>
     <color key="tintColor" name="disabledButtonColor"/>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
         <image name="f.square.fill" catalog="system" width="128" height="114"/>
+        <image name="house" catalog="system" width="128" height="104"/>
         <image name="ic_catstagram_logo" width="476" height="96"/>
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_send" width="512" height="512"/>
         <image name="ic_home_upload" width="512" height="512"/>
         <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
